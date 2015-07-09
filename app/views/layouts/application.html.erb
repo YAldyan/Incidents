@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Incidents</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'default', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  
+  <title>Incidents: <%= controller.action_name %></title>
+  
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= auto_discovery_link_tag(:rss, {:action=>'news'}) %>
+  <%= javascript_include_tag 'prototype' %>
+</head>
+<body>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+<%= yield %>
+
+</body>
+</html>

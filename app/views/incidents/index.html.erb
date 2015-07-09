@@ -1,0 +1,7 @@
+<h1>Listing incidents</h1>
+<%= render(:partial=>'map', :locals=>{:data=>'/incidents.xml',
+   :full_page=>true, :show_action=>'show', :new_action=>'new' }) %>
+
+<br>
+
+<%= link_to 'New Incident', new_incident_path %>
